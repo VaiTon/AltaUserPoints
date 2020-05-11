@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.0" type="plugin" group="content" method="upgrade">
+	<name>Content - AltaUserPoints - Raffle</name>
+	<author>Bernard Gilly - Adrien Roussel</author>
+	<creationDate>2014 June 19</creationDate>
+	<copyright>Copyright (C) 2015-2016 Bernard Gilly - Adrien Roussel. All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>contact@nordmograph.com</authorEmail>
+	<authorUrl>https://www.nordmograph.com/extensions</authorUrl>
+	<version>1.9.1</version>
+	<description>This plugin for AltaUserPoints allows your users to sign-up for a raffle.</description>
+	<files>
+		<filename plugin="sysplgaup_raffle">sysplgaup_raffle.php</filename>
+	</files>
+</extension>

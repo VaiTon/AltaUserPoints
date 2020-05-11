@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="COM_AUP_LASTACTIVITY_LAYOUT">
+		<message>
+			<![CDATA[COM_AUP_LASTACTIVITY_LAYOUT]]>
+		</message>
+	</layout>
+	
+	<!-- Add fields to the parameters object for the layout. -->
+	<fields name="params">
+	
+		<!-- Basic options. -->
+		<fieldset name="basic" label="COM_MENUS_BASIC_FIELDSET_LABEL">
+
+			<field name="show_links_to_users" type="radio" class="radio btn-group" default="1" label="AUP_SHOW_LINKS" description="AUP_SHOW_LINKS_DESC">
+				<option value="0">AUP_HIDE</option>
+				<option value="1">AUP_SHOW</option>
+			</field>
+  		<field name="usrname" type="list" default="name" label="AUP_CHOOSEFIELDNAME" description="AUP_CHOOSEFIELDNAME">
+  			<option value="name">AUP_NAME</option>
+  			<option value="username">AUP_USERNAME</option>
+  		</field>
+  		<field name="activity" type="radio" class="radio btn-group" default="1" label="AUP_POINTS" description="AUP_POINTS">
+  			<option value="1">AUP_POSITIVE</option>
+  			<option value="2">AUP_NEGATIVE</option>
+  			<option value="0">AUP_BOTH</option>
+  		</field>
+    	<field name="showIconCategory" type="radio" class="radio btn-group" default="1" label="AUP_SHOW_ICON_CATEGORY" description="AUP_SHOW_ICON_CATEGORY">
+    		<option value="0">JNo</option>
+    		<option value="1">JYes</option>
+    	</field>
+    	
+    	<field name="showAvatar" type="radio" class="radio btn-group" default="0" label="AUP_SHOW_AVATAR" description="AUP_SHOW_AVATAR">
+    		<option value="0">JNo</option>
+    		<option value="1">JYes</option>
+    	</field>
+      <field name="heightAvatar" type="text" size="10" default="48" label="AUP_HEIGHTIMAGE" description="AUP_HEIGHTIMAGE"/> 
+
+		</fieldset>
+		<fieldset name="rss" label="COM_MENUS_RSS_FIELDSET_LABEL">	
+		<field name="rssnote" type="note" label="AUP_RSSWARNING" description="AUP_RSSWARNING_DESC" />
+		
+		
+  		<field name="count" type="text" default="20" label="AUP_COUNT" description="AUP_COUNTDESC" />
+  		<field name="usrname" type="list" default="name" label="AUP_CHOOSEFIELDNAME" description="AUP_CHOOSEFIELDNAME">
+  			<option value="name">AUP_NAME</option>
+  			<option value="username">AUP_USERNAME</option>
+  		</field>
+  		<field name="activity" type="radio" class="radio btn-group" default="1" label="AUP_POINTS" description="AUP_POINTS">
+  			<option value="1">AUP_POSITIVE</option>
+  			<option value="2">AUP_NEGATIVE</option>
+  			<option value="0">AUP_BOTH</option>
+  		</field>
+  		
+		</fieldset>
+	</fields>
+
+</metadata>

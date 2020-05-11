@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="COM_AUP_MEDALSLISTLAYOUT">
+		<message>
+			<![CDATA[COM_AUP_MEDALSLISTLAYOUT]]>
+		</message>
+	</layout>
+	
+	<!-- Add fields to the parameters object for the layout. -->
+	<fields name="params">
+	
+		<!-- Basic options. -->
+		<fieldset name="basic" label="COM_MENUS_BASIC_FIELDSET_LABEL">	
+
+    	<field name="showImage" type="list" default="1" label="AUP_SHOW" description="AUP_SHOW">
+    		<option value="0">AUP_ICON</option>
+    		<option value="1">AUP_IMAGE</option>
+    	</field>
+      <field name="heightImage" type="text" size="10" default="32" label="AUP_HEIGHTIMAGE" description="AUP_HEIGHTIMAGE_DESC"/>
+      		<field name="show_links_to_users" type="radio" class="radio btn-group" default="1" label="AUP_SHOW_LINKS" description="AUP_SHOW_LINKS_DESC">
+				<option value="0">AUP_HIDE</option>
+				<option value="1">AUP_SHOW</option>
+			</field>
+  		<field name="usrname" type="list" default="" label="AUP_CHOOSEFIELDNAME" description="AUP_CHOOSEFIELDNAME">
+  			<option value="name">AUP_NAME</option>
+  			<option value="username">AUP_USERNAME</option>
+  			<option value="">AUP_BOTH</option>
+  		</field>
+    	<field name="showAvatar" type="radio" class="radio btn-group" default="1" label="AUP_SHOW_AVATAR" description="AUP_SHOW_AVATAR">
+    		<option value="0">JNo</option>
+    		<option value="1">JYes</option>
+    	</field>
+      <field name="heightAvatar" type="text" size="10" default="24" label="AUP_HEIGHTIMAGE" description="AUP_HEIGHTIMAGE"/>
+      
+		</fieldset>
+	</fields>
+
+</metadata>

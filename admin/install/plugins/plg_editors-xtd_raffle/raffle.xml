@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.0" type="plugin" group="editors-xtd" method="upgrade">
+	<name>Editor Button - AltaUserPoints Raffle</name>
+	<creationDate>23/03/2011</creationDate>
+	<author>Mike Gusev</author>
+	<authorEmail>migusbox@gmail.com</authorEmail>
+	<authorUrl>migusbox.com</authorUrl>
+	<copyright>Copyright (C) 2011 Mike Gusev</copyright>
+	<license>GNU/GPLv2 or later</license>
+	<version>1.6.0</version>
+	<description>Raffle Editor Button Plugin - adds a Raffle button into article editor. Required AltaUserPoints v.1.6.0 or newer.</description>
+	<files>
+		<filename plugin="raffle">raffle.php</filename>
+		<filename plugin="raffle">raffle.css</filename>
+		<filename plugin="raffle">raffle.png</filename>
+	</files>
+	<languages>
+	<language tag="en-GB">language/en-GB/en-GB.plg_editors-xtd_raffle.ini</language>
+	<language tag="ru-RU">language/ru-RU/ru-RU.plg_editors-xtd_raffle.ini</language>
+	<language tag="fr-FR">language/fr-FR/fr-FR.plg_editors-xtd_raffle.ini</language>
+	</languages>
+	<administration>
+		<languages>
+		<language tag="en-GB">language/en-GB/en-GB.plg_editors-xtd_raffle.ini</language>
+		<language tag="ru-RU">language/ru-RU/ru-RU.plg_editors-xtd_raffle.ini</language>
+		<language tag="fr-FR">language/fr-FR/fr-FR.plg_editors-xtd_raffle.ini</language>
+		</languages>
+	</administration>
+</extension>

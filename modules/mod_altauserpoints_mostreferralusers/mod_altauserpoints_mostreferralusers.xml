@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="3.0" client="site" method="upgrade">
+	<name>AltaUserPoints - Most Referral Users</name>
+	<author>Bernard Gilly - Adrien Roussel</author>
+	<creationDate>2016 february 13</creationDate>
+	<copyright>Copyright (C) 2015-2016. All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>www.alphaplug.com</authorEmail>
+	<authorUrl>https://www.nordmograph.com/extensions</authorUrl>
+	<version>1.0.0</version>
+	<description>Most referral users</description>
+	<languages>
+		<language tag="en-GB">en-GB.mod_altauserpoints_mostreferralusers.ini</language>
+		<language tag="fr-FR">fr-FR.mod_altauserpoints_mostreferralusers.ini</language>
+		<language tag="es-ES">es-ES.mod_altauserpoints_mostreferralusers.ini</language>
+	</languages>
+	<files>
+		<filename module="mod_altauserpoints_mostreferralusers">mod_altauserpoints_mostreferralusers.php</filename>
+		<filename>helper.php</filename>
+		<filename>tmpl/default.php</filename>
+	</files>
+	<config>
+	 <fields name="params">
+	  <fieldset name="basic">
+		<field name="moduleclass_sfx" type="text" default="" label="MODAUP_MR_CLASSSUFFIX" description="MODAUP_MR_CLASSSUFFIXDESC" />
+		<field name="count" type="text" default="5" label="MODAUP_MR_COUNT" description="MODAUP_MR_COUNTDESC" />
+		<field name="usrname" type="radio" class="radio btn-group" default="name" label="MODAUP_MR_USRNAME" description="MODAUP_MR_USRNAMEDESC">
+			<option value="name">MODAUP_MR_NAME</option>
+			<option value="username">MODAUP_MR_USERNAME</option>
+		</field>
+		<field name="showavatar" type="radio" class="radio btn-group" default="0" label="MODAUP_MR_SHOW_AVATAR" description="MODAUP_MR_SHOW_AVATAR">
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+		</fieldset>
+   </fields>	
+	</config>
+</extension>

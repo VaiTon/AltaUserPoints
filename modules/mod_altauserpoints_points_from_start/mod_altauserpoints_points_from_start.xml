@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="3.0" client="site" method="upgrade">
+	<name>AltaUserPoints - Points from Start</name>
+	<author>Bernard Gilly - Adrien Roussel</author>
+	<creationDate>2015 december 17</creationDate>
+	<copyright>Copyright (C) 2015-2016. All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	
+	<authorUrl>https://www.nordmograph.com/extensions</authorUrl>
+	<version>1.0.1</version>
+	<description>Points from start with option to include purged and deleted activities</description>
+	<languages>
+		<language tag="en-GB">en-GB.mod_altauserpoints_points_from_start.ini</language>
+		<language tag="fr-FR">fr-FR.mod_altauserpoints_points_from_start.ini</language>
+	</languages>
+	<files>
+	  <filename module="mod_altauserpoints_points_from_start">mod_altauserpoints_points_from_start.php</filename>
+		<filename>helper.php</filename>
+		<filename>tmpl/default.php</filename>		
+	</files>
+	<config>
+	 <fields name="params">
+	  <fieldset name="basic">
+		<field name="purged" type="radio" class="radio btn-group" default="0" label="MODAUP_PFS_INCLUDE_DELETED_POINTS" description="MODAUP_PFS_INCLUDE_DELETED_POINTS_DESC">
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+		<field name="show" type="list" default="3" label="MODAUP_PFS_SHOW" description="MODAUP_PFS_SHOW">
+    	<option value="1">MODAUP_PFS_POSITIVE_POINTS</option>
+    	<option value="2">MODAUP_PFS_NEGATIVE_POINTS</option>
+			<option value="3">MODAUP_PFS_BOTH</option>
+		</field> 
+		<field name="format" type="list" default="1" label="MODAUP_PFS_FORMAT" description="MODAUP_PFS_FORMAT_DESC">
+    	<option value="1">H1</option>
+    	<option value="2">H2</option>
+			<option value="3">H3</option>
+			<option value="4">H4</option>
+      <option value="5">H5</option>
+      <option value="6">H6</option>
+		</field>
+		</fieldset>
+   </fields>	
+	</config>
+</extension>

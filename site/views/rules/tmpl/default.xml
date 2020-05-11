@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="COM_AUP_RULESLISTLAYOUT">
+		<message>
+			<![CDATA[COM_AUP_RULESLISTLAYOUT]]>
+		</message>
+	</layout>
+	
+	<!-- Add fields to the parameters object for the layout. -->
+	<fields name="params">	
+	
+		<!-- Basic options. -->
+		<fieldset name="basic" label="COM_MENUS_BASIC_FIELDSET_LABEL">
+
+		<field name="show_published" type="radio" class="radio btn-group" default="1" label="AUP_SHOW_PUBLISHED" description="AUP_SHOW_PUBLISHED_DESC">
+  		<option value="0">JNo</option>
+		  <option value="1">JYes</option>
+  	</field>
+		<field name="hide_rule_byid" type="text" size="40" default="0" label="AUP_HIDERULE_BYID" description="AUP_HIDERULE_BYID_DESC"/>
+
+		<field name="order_by" type="list" default="" label="AUP_RULES_ORDER_BY" description="AUP_RULES_ORDER_BY_DESC" >
+  		<option value="0">Rule ID</option>
+  		<option value="1">Category</option>
+  		<option value="2">Amount of Points</option>
+		</field>
+		<field name="show_caticon" type="radio" class="radio btn-group" default="1" label="AUP_SHOWCATICON" description="AUP_SHOWCATICON">
+  		<option value="0">JNo</option>
+		<option value="1">JYes</option>
+    	</field>
+    	<field name="show_desc" type="radio" class="radio btn-group" default="1" label="AUP_SHOW_DESC" description="AUP_SHOW_DESC">
+  		<option value="0">JNo</option>
+		<option value="1">JYes</option>
+    	</field>
+    	<field name="show_approve" type="radio" class="radio btn-group" default="0" label="AUP_SHOW_APPROVE" description="AUP_SHOW_APPROVE">
+  		<option value="0">JNo</option>
+		<option value="1">JYes</option>
+    	</field>	
+		</fieldset>
+	</fields>    	
+</metadata>

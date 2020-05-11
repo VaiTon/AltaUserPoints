@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fieldset name="primaryfieldset">
+		<field 
+            name="other_recipients" 
+            type="textarea" 
+            label="AUP_RECIPIENTS" 
+            description="AUP_RECIPIENTS" 
+			filter="safehtml" 
+			class="inputbox required" 
+			required="true"  />
+		<field 
+            name="sender" 
+            type="sender" 
+            label="AUP_YOURNAME" 
+            description="" 
+			filter="safehtml" 
+			class="inputbox required" 
+			required="true"  /> 
+		<field 
+            name="custommessage" 
+            type="textarea" 
+            label="AUP_CUSTOMMESSAGEOPTIONAL" 
+            description="AUP_THISMESSAGEWILLBEAPPEARINTHEEMAILSENT" 
+			filter="safehtml" 
+			class="inputbox"  />  
+			
+			
+			
+			<field
+			name="captcha"
+			type="captcha"
+			label="AUP_CAPTCHA_LABEL"
+			description="AUP_CAPTCHA_DESC"
+			validate="captcha"
+		/>
+    </fieldset>
+</form>

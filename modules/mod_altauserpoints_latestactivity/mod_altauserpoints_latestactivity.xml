@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="3.0" client="site" method="upgrade">
+	<name>AltaUserPoints - Lastest activity</name>
+	<author>Bernard Gilly - Adrien Roussel</author>
+	<creationDate>2016 february 13</creationDate>
+	<copyright>Copyright (C) 2015-2016. All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>	
+	<authorEmail>contact@nordmograph.com</authorEmail>
+	<authorUrl>https://www.nordmograph.com/extensions</authorUrl>
+	<version>1.0.0</version>
+	<description>Latest activity</description>
+	<languages>
+		<language tag="en-GB">en-GB.mod_altauserpoints_latestactivity.ini</language>
+		<language tag="fr-FR">fr-FR.mod_altauserpoints_latestactivity.ini</language>
+	</languages>
+	<files>
+		<filename module="mod_altauserpoints_latestactivity">mod_altauserpoints_latestactivity.php</filename>
+		<filename>helper.php</filename>
+		<filename>tmpl/default.php</filename>
+	</files>
+	<config>
+	 <fields name="params">
+	  <fieldset name="basic">
+		<field name="moduleclass_sfx" type="text" default="" label="MODAUP_LP_CLASSSUFFIX" description="MODAUP_LP_CLASSSUFFIXDESC" />
+		<field name="count" type="text" default="5" label="MODAUP_LP_COUNT" description="MODAUP_LP_COUNTDESC" />
+		<field name="showallmembers" type="radio" class="radio btn-group" default="1" label="MODAUP_LP_SHOWALLMEMBERS" description="MODAUP_LP_SHOWALLMEMBERS_DESC">
+			<option value="0">MODAUP_LP_CURRENTUSER</option>
+			<option value="1">MODAUP_LP_ALLMEMBERS</option>
+		</field>
+		<field name="usrname" type="radio" class="radio btn-group" default="name" label="MODAUP_LP_USRNAME" description="MODAUP_LP_USRNAMEDESC">
+			<option value="name">MODAUP_LP_NAME</option>
+			<option value="username">MODAUP_LP_USERNAME</option>
+		</field>
+		<field name="showavatar" type="radio" class="radio btn-group" default="0" label="MODAUP_LP_SHOW_AVATAR" description="MODAUP_LP_SHOW_AVATAR">
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+		<field name="showIconCategory" type="radio" class="radio btn-group" default="0" label="MODAUP_LP_SOWICONCATEGORY" description="MODAUP_LP_SOWICONCATEGORY">
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+		</fieldset>
+   </fields>	
+	</config>
+</extension>

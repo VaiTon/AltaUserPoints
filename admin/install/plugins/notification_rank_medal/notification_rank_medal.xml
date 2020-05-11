@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.0" type="plugin" group="altauserpoints" method="upgrade">
+	<name>AltaUserPoints - Notification on update rank and medal</name>
+	<author>Bernard Gilly - Adrien Roussel</author>
+	<creationDate>2014 september 15</creationDate>
+	<copyright>(C) 2015-2016. All rights reserved.</copyright>
+	<license>GNU/GPL</license>
+	<authorEmail>contact@nordmograph.com</authorEmail>
+	<authorUrl>https://www.nordmograph.com/extensions</authorUrl>
+	<version>1.9.0</version>
+	<description>Notification by email on update rank and medal</description>
+	<files>
+		<filename plugin="notification_rank_medal">notification_rank_medal.php</filename>
+	</files>
+</extension>

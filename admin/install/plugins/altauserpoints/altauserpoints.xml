@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.0" type="plugin" group="system" method="upgrade">
+	<name>System - AltaUserPoints</name>
+	<author>Bernard Gilly - Adrien Roussel</author>
+	<creationDate>2013 June 14</creationDate>
+	<copyright>(C) 2015-2016. All rights reserved.</copyright>
+	<license>GNU/GPL</license>
+	<authorEmail>contact@nordmograph.com</authorEmail>
+	<authorUrl>https://www.nordmograph.com/extensions</authorUrl>
+	<version>1.9.0</version>
+	<description>User points system.</description>
+	<files>
+		<filename plugin="altauserpoints">altauserpoints.php</filename>
+	</files>
+</extension>
