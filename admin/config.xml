@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+	<fieldset name="general" label="AUP_GENERAL" description="">
+  	<field name="formatPoints" type="list" default="0" label="AUP_FORMAT_POINTS" description="AUP_FORMAT_POINTS_DESCRIPTION">
+  		<option value="0">AUP_FORMAT_0</option>
+  		<option value="1">AUP_FORMAT_1</option>
+  		<option value="2">AUP_FORMAT_2</option>
+  		<option value="3">AUP_FORMAT_3</option>
+  		<option value="4">AUP_FORMAT_4</option>
+  		<option value="5">AUP_FORMAT_5</option>
+  		<option value="6">AUP_FORMAT_6</option>
+  		<option value="7">AUP_FORMAT_7</option>
+  		<option value="8">AUP_FORMAT_8</option>
+  		<option value="9">AUP_FORMAT_9</option>
+  	</field>	   
+  	<field name="allowNegativeAccount" type="radio" default="0" class="btn-group" label="AUP_ALLOWS_NEGATIVE_ACCOUNT" description="AUP_ALLOWS_NEGATIVE_ACCOUNT_DESCRIPTION">
+  		<option value="0">JNo</option>
+  		<option value="1">JYes</option>
+  	</field>
+  	<field name="insertAllActivities" type="radio" default="0" class="btn-group" label="AUP_INSERT_ALL_ACTIVITIES" description="AUP_INSERT_ALL_ACTIVITIES_DESCRIPTION">
+  		<option value="0">JNo</option>
+  		<option value="1">JYes</option>
+  	</field>
+    <field name="limit_daily_points" type="text" size="20" default="" label="AUP_LIMIT_DAILY_POINTS" description="AUP_LIMIT_DAILY_POINTS_DESCRIPTION"/>
+	<field name="systemregistration" type="list" default="J!" label="AUP_SYSTEM_REGISTRATION" description="AUP_SYSTEM_REGISTRATIONDESC">
+		<option value="J!">Joomla! Core</option>
+		<option value="js">Jomsocial</option>
+		<option value="cb">Community Builder</option>
+		<option value="cbe">CBE</option>
+		<option value="VM">Virtuemart</option>
+		<option value="hikas">Hikashop</option>
+		<option value="ju">Joomsuite User</option>
+		<option value="ose">OSE Membership Control</option>
+		<option value="ext">ExtendedReg</option>
+		<option value="es">EasySocial</option> 
+		<option value="ep">EasyProfile</option>  
+	</field>
+  	
+  </fieldset>
+  <fieldset name="profile" label="AUP_PROFILE" description="">
+  	<field name="allowGuestUserViewProfil" type="list" default="0" label="AUP_GUEST_USER" description="AUP_GUEST_USER">
+  		<option value="0">AUP_NOT_ALLOWS_GUEST_USERS_TO_VIEW_PROFILES</option>
+  		<option value="1">AUP_ALLOWS_GUEST_USERS_TO_VIEW_PROFILES</option>
+  	</field>  	
+  	<field name="prefix_selfregister" type="text" size="20" default="" label="AUP_PREFIX_SELF_REGISTERED" description="AUP_PREFIX_SELF_REGISTERED"/>
+  	<field name="prefix_referralregister" type="text" size="20" default="" label="AUP_PREFIX_REGISTERED_BY_REFERRAL" description="AUP_PREFIX_REGISTERED_BY_REFERRAL"/>
+  	<field name="referralIDtype" type="radio" default="r" label="AUP_REFERRAL_ID" description="AUP_CHOOSE_TYPE_REFERRAL_ID" class="btn-group">
+  		<option value="r">AUP_RANDOMIZE</option>
+  		<option value="u">AUP_USERNAME</option>
+  	</field>
+  	<field name="useAvatarFrom" type="list" default="0" label="AUP_USE_AVATAR_FROM" description="AUP_USE_AVATAR_FROM_DESC">
+  		<option value="0">AUP_NONE</option>
+  		<option value="gravatar">Gravatar</option>
+  		<option value="kunena">Kunena</option>
+  		<option value="cb">Community Builder</option>
+		<option value="easyblog">EasyBlog</option>
+  		<option value="cbe">CBE</option>
+      	<option value="jomsocial">JomSocial</option>
+	  	<option value="easysocial">EasySocial</option>
+		<option value="easyprofile">EasyProfile (JSN)</option>
+  		<option value="clexus">Clexus PM</option>
+  		<option value="K2">K2</option>
+  		<option value="jomWALL">JomWALL</option>
+  	</field>
+  	<field name="linkToProfile" type="list" default="" label="AUP_LINK_TO_PROFILE" description="AUP_LINK_TO_PROFILE_DESC">
+    	<option value="">AltaUserPoints</option>
+    	<option value="j!">Joomla!</option>
+  	  	<option value="ku">Kunena</option>
+		<option value="cb">Community Builder</option>
+		<option value="cbe">CBE</option>
+      	<option value="js">JomSocial</option>
+	  	<option value="eb">EasyBlog</option>
+		<option value="es">EasySocial</option>
+	  	<option value="ep">EasyProfile</option> 
+      	<option value="jw">JomWALL</option>
+  	</field>
+	<field name="hide_credits" type="radio" default="0" class="btn-group" label="NEW: Hide Credits" description="Hide front end credits to Nordmograph site. If you like this new feature, thank you for rating AltaUP at the JED ">
+    	<option value="0">JNo</option>
+    	<option value="1">JYes</option>
+    </field>  
+  </fieldset> 
+  <fieldset name="integration" label="AUP_INTEGRATION" description="">
+    <field name="jsNotification" type="radio" default="0" class="btn-group" label="AUP_JOMSOCIAL_NOTIFICATION" description="AUP_JOMSOCIAL_NOTIFICATION_DESC">
+    	<option value="0">JNo</option>
+    	<option value="1">JYes</option>
+    </field>  
+    <field name="showUddeimTab" type="radio" default="0" class="btn-group" label="AUP_UDDEIM_PROFILE" description="AUP_UDDEIM_PROFILE_DESC">
+    	<option value="0">JNo</option>
+    	<option value="1">JYes</option>
+    </field>
+    <field name="sendMsgUddeim" type="radio" default="0" class="btn-group" label="AUP_UDDEIM_SEND_NOTIFICATION" description="AUP_UDDEIM_SEND_NOTIFICATION_DESC">
+    	<option value="0">JNo</option>
+    	<option value="1">JYes</option>
+    </field>
+    <field name="fromIdUddeim" type="sql" size="20" default="" label="AUP_UDDEIM_FROM_ID" description="AUP_UDDEIM_FROM_ID_DESC" query="SELECT id, username FROM #__users WHERE sendEmail='1' AND block='0' ORDER BY username ASC" key_field="id" value_field="username" /> 
+  </fieldset>
+	
+	<fieldset name="permissions" label="JCONFIG_PERMISSIONS_LABEL" description="JCONFIG_PERMISSIONS_DESC">
+		<field name="rules" type="rules" label="JCONFIG_PERMISSIONS_LABEL" filter="rules" component="com_altauserpoints" section="component">
+			<action name="core.admin" title="JACTION_ADMIN" description="JACTION_ADMIN_COMPONENT_DESC" />  			
+			<action name="core.manage" title="JACTION_MANAGE" description="JACTION_MANAGE_COMPONENT_DESC" />
+			                                                         
+			<action name="core.rules" title="AUP_RULES" description="AUP_RULES" />
+			<action name="core.users" title="AUP_USERS" description="AUP_USERS" />
+			<action name="core.activity" title="AUP_ACTIVITY" description="AUP_ACTIVITY" />
+			<action name="core.templatesinvite" title="AUP_TEMPLATES_INVITE" description="AUP_TEMPLATES_INVITE" />
+			<action name="core.usersynch" title="AUP_USERSYNC" description="AUP_USERSYNC" />
+		  <action name="core.recalculate" title="AUP_RECALCULATE" description="AUP_RECALCULATE" />	
+		  <action name="core.categories" title="JCATEGORIES" description="JCATEGORIES" />	
+			
+			<action name="core.setmaxpoints" title="AUP_SETMAXPOINST" description="AUP_SETMAXPOINST" />
+			<action name="core.resetallpoints" title="AUP_RESETPOINTS" description="AUP_RESETPOINTS" />
+			<action name="core.purgeexpiredpoints" title="AUP_PURGEEXPIRESPOINTS" description="AUP_PURGEEXPIRESPOINTS" />
+			
+			<action name="core.couponcodes" title="AUP_COUPON_CODES" description="AUP_COUPON_CODES" />
+			<action name="core.raffles" title="AUP_RAFFLE" description="AUP_RAFFLE" />
+			<action name="core.levelrank" title="AUP_LEVEL_RANK" description="AUP_LEVEL_RANK" />
+			
+			<action name="core.exportactiveusers" title="AUP_EXPORTACTIVEUSERS" description="AUP_EXPORTACTIVEUSERS" />
+			<action name="core.exportemails" title="AUP_EXPORTEMAILS" description="AUP_EXPORTEMAILS" />
+			<action name="core.viewstats" title="AUP_STATISTICS" description="AUP_STATISTICS" />
+			<action name="core.combineactivities" title="AUP_COMBINE_ACTIVITIES" description="AUP_COMBINE_ACTIVITIES" />
+			<action name="core.plugins" title="AUP_PLUGINS" description="AUP_PLUGINS" />
+			<action name="core.autodetectplugins" title="AUP_AUTODETECTPLUGINS" description="AUP_AUTODETECTPLUGINS" /> 			
+			
+			<action name="core.reportsystem" title="AUP_REPORT_SYSTEM" description="AUP_REPORT_SYSTEM" />
+		</field>
+	</fieldset>
+</config>

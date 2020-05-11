@@ -1,0 +1,61 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en_US" xml:lang="en_US">
+<head>
+<title>How to create a plugin</title>
+<link href="css/help.css" rel="stylesheet" type="text/css" />
+<meta name="copyright" content="Copyright (C) 2015 Bernard Gilly - Adrien Roussel. All rights reserved." />
+<meta name="license" content="http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL" />
+<style type="text/css">
+<!--
+.Style1 {
+	font-size: 14pt;
+	font-weight: bold;
+}
+.Style5 {color: #FF0000}
+-->
+</style>
+</head>
+<body>
+<h1>AltaUserPoints - 1.9.x - How create a plugin - (Basic) </h1>
+
+<p> The creation of a plugin (creation of a new rule for a third component) is divided into 2 phases. 
+    <br />
+    <br />
+    <span class="Style1">Step 1 - Inserting  API in your component </span><br />
+This course is aimed primarily at developers or any person with a level of knowledge sufficiently advanced in PHP. <br />
+<br />
+Simply insert the following API in the code component to where you want. The ideal is to follow an action that can bring items to the connected user. For example, in a component of any comments or forum, simply add the API after insertion source code of the commentary or new topic in the database.<br />
+<br />
+<strong>API:</strong> </p>
+<p class="Style5">$api_AUP = JPATH_SITE.'/components/com_altauserpoints/helper.php';<br />
+  if ( file_exists($api_AUP))<br />
+  {<br />
+&nbsp;&nbsp;&nbsp;&nbsp;require_once ($api_AUP);<br />
+&nbsp;&nbsp;&nbsp;&nbsp;AltaUserPointsHelper::newpoints( 'function_name' );<br />
+  }</p>
+<p><br />
+  <b>function_name</b> is the rule which will be used to award points to the current user (if registered and logged). <br />
+For all the rules included in AltaUserPoints (systems), the function names are written as follows: <br />
+<br />
+example: <i>sysplgaup_newregistered</i> for awarding points to a new registered user. <br />
+<br />
+It should keep a nomage standard for plugin-third of components as follows: <br />
+<br />
+<i>plgaup_componentname_function_name<br />
+</i><br />
+Example <i>plgaup_new_comment</i> or <i>plgaup_kunena_topic_reply</i> to resume the example of the inclusion of this component API in a comment or Kunena forum. <br />
+The name of a function to award points when creating a new topic posted in the component Kunena could be, for example, <i>plgaup_kunena_topic_create</i>. <br />
+<br />
+<span class="Style1">Step 2 - Add the new rule(s) in the rules manager </span><br /> 
+With AltaUserPoints version 1.9.6 and later for Joomla 3.x,  all developers of third extensions for Joomla! can add directly at the root of their <strong>frontend </strong> components or plugins an unique xml file containing all the rules for a single component. The file structure is almost similar but you have to respect the ordering and tags: </p>
+<p><img src="schemaxml.png" width="689" height="559" /></p>
+<p>Tag “component” is the name of the third component like “com_kunena” or other. As it is the same component, it is worth repeating for each rule in the tag “rule” </p>
+<p>Administrator of the website which install a third component with this xml file can auto-detect directly from the button “auto-detect plugins” in control panel of AltaUserPoints. </p>
+<p>This xml file has to be utf-8 encoded (required) but not be zipped! Just put this file at the root of <strong>frontend </strong> component folder or plugin or module and include this file in your installer extension . This file <strong>must </strong><strong></strong><strong>be </strong><strong></strong><strong>named </strong>exactly as follows: <strong>altauserpoints_rule.xml </strong></p>
+<p>  <br />
+  <span class="Style1">Note to developers </span><br />
+  <br />
+You can find the complete documentation to insert and use this API in your components or plugin <a target="_blank" href="https://www.nordmograph.com/extensions/index.php?option=com_content&view=category&id=74&Itemid=288">here</a>.</p>
+</body>
+</html>

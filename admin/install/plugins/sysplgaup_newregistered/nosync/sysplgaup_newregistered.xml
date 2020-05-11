@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.0" type="plugin" group="user" method="upgrade">
+	<name>User - AltaUserPoints - New user</name>
+	<author>Bernard Gilly - Adrien Roussel</author>
+	<creationDate>2016 february 08</creationDate>
+	<copyright>Copyright (C) 2015-2016. Alphaplug.com. All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>contact@nordmograph.com</authorEmail>
+	<authorUrl>https://www.nordmograph.com/extensions</authorUrl>
+	<version>1.0.0</version>
+	<description>Assign points to new users</description>
+	<files>
+		<filename plugin="sysplgaup_newregistered">sysplgaup_newregistered.php</filename>
+	</files>
+</extension>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="COM_AUP_USERSLISTLAYOUT">
+		<message>
+			<![CDATA[COM_AUP_USERSLISTLAYOUT]]>
+		</message>
+	</layout>
+	
+	<!-- Add fields to the parameters object for the layout. -->
+	<fields name="params">
+	
+		<!-- Basic options. -->
+		<fieldset name="basic" label="COM_MENUS_BASIC_FIELDSET_LABEL">
+		
+			<field name="show_limit" type="radio" class="radio btn-group" default="1" label="AUP_SHOWLIMIT" description="AUP_SHOWLIMITDESC">
+				<option value="0">JNo</option>
+				<option value="1">JYes</option>
+			</field>  
+			<field name="show_headings" type="radio" class="radio btn-group" default="1" label="AUP_SHOWHEADINGS" description="AUP_SHOWHEADINGSDESC">
+				<option value="0">JNo</option>
+				<option value="1">JYes</option>
+			</field>
+			<field name="show_num_cols" type="radio" class="radio btn-group" default="1" label="AUP_SHOW_NUM_COLS" description="AUP_SHOW_NUM_COLS">
+				<option value="0">JNo</option>
+				<option value="1">JYes</option>
+			</field>			
+			<field name="show_name_cols" type="radio" class="radio btn-group" default="1" label="AUP_SHOWNAMECOLS" description="AUP_SHOWNAMECOLSDESC">
+				<option value="0">JNo</option>
+				<option value="1">JYes</option>
+			</field> 
+			<field name="show_username_cols" type="radio" class="radio btn-group" default="1" label="AUP_SHOWUSERNAMECOLS" description="AUP_SHOWUSERNAMECOLSDESC">
+				<option value="0">JNo</option>
+				<option value="1">JYes</option>
+			</field>
+			<field name="show_referreid_cols" type="radio" class="radio btn-group" default="1" label="AUP_SHOWREFERREIDCOLS" description="AUP_SHOWREFERREIDCOLSDESC">
+				<option value="0">JNo</option>
+				<option value="1">JYes</option>
+			</field>                                                                         
+			<field name="show_referral_user_cols" type="radio" class="radio btn-group" default="1" label="AUP_REFERRALUSER" description="AUP_REFERRALUSER">
+				<option value="0">JNo</option>
+				<option value="1">JYes</option>
+			</field>			
+			<field name="show_rank_icon_cols" type="radio" class="radio btn-group" default="0" label="AUP_SHOW_RANK_ICON_COLS" description="AUP_SHOW_RANK_ICON_COLS">
+				<option value="0">JNo</option>
+				<option value="1">JYes</option>
+			</field>				
+			<field name="show_nummedals_cols" type="radio" class="radio btn-group" default="0" label="AUP_SHOW_NUM_MEDALS" description="AUP_SHOW_NUM_MEDALS">
+				<option value="0">JNo</option>
+				<option value="1">JYes</option>
+			</field>
+			<field name="show_links_to_users" type="radio" class="radio btn-group" default="1" label="AUP_SHOW_LINKS" description="AUP_SHOW_LINKS_DESC">
+				<option value="0">AUP_HIDE</option>
+				<option value="1">AUP_SHOW</option>
+			</field>
+        
+    	<field name="showAvatar" type="radio" class="radio btn-group" default="1" label="AUP_SHOW_AVATAR" description="AUP_SHOW_AVATAR">
+    		<option value="0">JNo</option>
+    		<option value="1">JYes</option>
+    	</field>
+      <field name="heightAvatar" type="text" size="10" default="24" label="AUP_HEIGHTIMAGE" description="AUP_HEIGHTIMAGE"/> 
+      
+		</fieldset>
+	</fields>
+
+</metadata>

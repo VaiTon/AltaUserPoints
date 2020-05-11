@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.0" type="plugin" group="quickicon" method="upgrade">
+	<name>altauserpointsicon</name>
+	<author>Bernard Gilly - Adrien Roussel</author>
+	<creationDate>2013 July 04</creationDate>
+	<copyright>Copyright (c)2015-2016 Bernard Gilly - Adrien Roussel</copyright>
+	<license>license GNU/GPL http://www.gnu.org/copyleft/gpl.html</license>	
+	<authorEmail>contact@nordmograph.com</authorEmail>
+	<authorUrl>https://www.nordmograph.com/extensions</authorUrl>
+	<version>1.9.0</version>
+	<isapplication>true</isapplication>
+	<description>
+		Quickicon for AltaUserPoints
+	</description>
+	<files>
+		<file plugin="altauserpointsicon">altauserpointsicon.php</file>
+	</files>
+</extension>

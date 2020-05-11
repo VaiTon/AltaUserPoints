@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.6" type="plugin" group="content" method="upgrade">
+	<name>Content - AltaUserPoints - Standard content</name>
+	<author>Bernard Gilly - Adrien Roussel</author>
+	<creationDate>2013 June 14</creationDate>
+	<copyright>Copyright (C) 2015-2016 Bernard Gilly - Adrien Roussel. All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>contact@nordmograph.com</authorEmail>
+	<authorUrl>https://www.nordmograph.com/extensions</authorUrl>
+	<version>2.0.0</version>
+	<description>This plugin for AltaUserPoints shows current userpoints with this syntax ' |{AUP::SHOWPOINTS}| '. You can use this inside a Joomla article or anywhere where content plugins are supported. Also in a custom module if you enable the 'Prepare content' option of the module.</description>
+	<files>
+		<filename plugin="sysplgaup_content">sysplgaup_content.php</filename>
+	</files>
+</extension>

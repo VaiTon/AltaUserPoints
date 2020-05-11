@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="component" version="3.8" method="upgrade">
+	<name>AltaUserPoints</name>
+	<author>Bernard Gilly - Adrien Roussel</author>
+	<creationDate>2016-02-12</creationDate>	
+	<authorEmail>contact@nordmograph.com</authorEmail>
+	<authorUrl>https://www.nordmograph.com/extensions</authorUrl>
+	<copyright>2015-2019 Bernard Gilly - Adrien Roussel - All Rights Reserved</copyright>
+	<license>GNU/GPL</license>
+	<version>1.1.13</version>
+	<description><![CDATA[User Points System component for Joomla! 3.x - Released under GNU/GPL license. See LICENSE.txt.]]></description>
+	<files folder="site">
+		<filename>altauserpoints.php</filename>
+		<filename>controller.php</filename>
+		<filename>helper.php</filename>
+		<filename>router.php</filename>
+		<folder>controllers</folder>
+		<folder>views</folder>
+		<folder>models</folder>
+		<folder>helpers</folder>
+		<folder>assets</folder>
+	</files>	
+	<languages folder="languages-site">
+		<language tag="en-GB">en-GB/en-GB.com_altauserpoints.ini</language>
+		<language tag="">fr-FR/fr-FR.com_altauserpoints.ini</language>
+		<language tag="">it-IT/it-IT.com_altauserpoints.ini</language>
+		<language tag="">es-ES/es-ES.com_altauserpoints.ini</language>
+		<language tag="">fi-FI/fi-FI.com_altauserpoints.ini</language>
+		<language tag="">nl-NL/nl-NL.com_altauserpoints.ini</language>
+    <language tag="">ru-RU/ru-RU.com_altauserpoints.ini</language>
+    <language tag="">de-DE/de-DE.com_altauserpoints.ini</language>
+    <language tag="">pt-BR/pt-BR.com_altauserpoints.ini</language>
+    <language tag="">cs-CZ/cs-CZ.com_altauserpoints.ini</language>
+    <language tag="">ro-RO/ro-RO.com_altauserpoints.ini</language>
+    <language tag="">el-GR/el-GR.com_altauserpoints.ini</language>
+    <language tag="">pl-PL/pl-PL.com_altauserpoints.ini</language> 
+    <language tag="">hu-HU/hu-HU.com_altauserpoints.ini</language>  
+	</languages>	
+  <scriptfile>script.php</scriptfile>        
+	<install>
+		<sql>
+			<file driver="mysql" charset="utf8" >sql/install.mysql.utf8.sql</file>
+		</sql>
+	</install>
+	<update>
+		<schemas>
+			<schemapath type="mysql">sql/updates/mysql</schemapath>
+		</schemas>
+	</update>
+	<administration> 		
+		 <menu img="components/com_altauserpoints/assets/images/referral_icon.png" alt="COM_ALTAUSERPOINTS">COM_ALTAUSERPOINTS</menu>
+		 <submenu>
+			<menu link="option=com_altauserpoints&amp;task=activities" img="class:aup-activities">COM_AUP_LASTACTIVITY</menu>
+			<menu link="option=com_altauserpoints&amp;task=statistics" img="class:aup-users">COM_AUP_USERSLIST</menu>
+			<menu link="option=com_altauserpoints&amp;task=rules" img="class:aup-rules">COM_AUP_RULESLIST</menu>
+			<menu link="option=com_config&amp;view=component&amp;component=com_altauserpoints" view="component" img="class:aup-config">COM_AUP_OPTIONS</menu>
+			<menu img="class:aup-cpanel">COM_AUP_CPANEL</menu>
+        </submenu>
+		<files folder="admin">
+			<filename>altauserpoints.php</filename>			
+			<filename>controller.php</filename>			
+ 			<filename>config.xml</filename>
+ 			<filename>access.xml</filename>
+      		<filename>LICENSE.txt</filename>
+	  		<folder>sql</folder>
+			<folder>views</folder>
+			<folder>models</folder>
+			<folder>assets</folder>
+			<folder>help</folder>
+			<folder>tables</folder>
+			<folder>install</folder>       
+		</files>
+		<languages folder="languages-admin">
+			<language tag="en-GB">en-GB/en-GB.com_altauserpoints.ini</language>
+			<language tag="en-GB">en-GB/en-GB.com_altauserpoints.sys.ini</language>
+			<language tag="">fr-FR/fr-FR.com_altauserpoints.ini</language>
+			<language tag="">fr-FR/fr-FR.com_altauserpoints.sys.ini</language>
+			<language tag="">it-IT/it-IT.com_altauserpoints.ini</language>
+			<language tag="">it-IT/it-IT.com_altauserpoints.sys.ini</language>
+			<language tag="">es-ES/es-ES.com_altauserpoints.ini</language>
+			<language tag="">es-ES/es-ES.com_altauserpoints.sys.ini</language>
+			<language tag="">fi-FI/fi-FI.com_altauserpoints.ini</language>
+			<language tag="">fi-FI/fi-FI.com_altauserpoints.sys.ini</language>
+		  <language tag="">de-DE/de-DE.com_altauserpoints.ini</language>
+		  <language tag="">de-DE/de-DE.com_altauserpoints.sys.ini</language>
+		  <language tag="">nl-NL/nl-NL.com_altauserpoints.ini</language>
+		  <language tag="">nl-NL/nl-NL.com_altauserpoints.sys.ini</language>
+		  <language tag="">ru-RU/ru-RU.com_altauserpoints.ini</language>
+		  <language tag="">ru-RU/ru-RU.com_altauserpoints.sys.ini</language>    
+		  <language tag="">pl-PL/pl-PL.com_altauserpoints.ini</language>
+		  <language tag="">pl-PL/pl-PL.com_altauserpoints.sys.ini</language>
+		  <language tag="">hu-HU/hu-HU.com_altauserpoints.ini</language>
+		  <language tag="">hu-HU/hu-HU.com_altauserpoints.sys.ini</language>
+		</languages>
+	</administration>
+	<updateservers>
+		<server type="extension" priority="1" name="AltaUserPoints Update Site">https://www.nordmograph.com/extensions/updateserver/com_altauserpoints-update.xml</server>
+	</updateservers>   
+  <modules>
+    <module module="mod_altauserpoints_actual_points"/>    
+    <module module="mod_altauserpoints_couponcode"/>
+    <module module="mod_altauserpoints_lastpointsearnedby"/>
+    <module module="mod_altauserpoints_latestactivity"/>
+    <module module="mod_altauserpoints_mostactiveusers"/>
+    <module module="mod_altauserpoints_mostreferralusers"/>
+    <module module="mod_altauserpoints_onlineusers"/>
+    <module module="mod_altauserpoints_monthly_stats"/>
+	<module module="mod_altauserpoints_points_from_start"/> 
+  </modules>   
+</extension>

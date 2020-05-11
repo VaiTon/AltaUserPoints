@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="3.6" client="site" method="upgrade">
+	<name>AltaUserPoints - Actual Points</name>
+	<author>Bernard Gilly - Adrien Roussel</author>
+	<creationDate>2016 February 13</creationDate>
+	<copyright>Copyright (C) 2015-2016. All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>contact@nordmograph.com</authorEmail>
+	<authorUrl>https://www.nordmograph.com/extensions</authorUrl>
+	<version>1.0.1</version>
+	<description>Actual Points</description>
+	<files>
+	  <filename module="mod_altauserpoints_actual_points">mod_altauserpoints_actual_points.php</filename>
+		<filename>helper.php</filename>
+		<filename>tmpl/default.php</filename>		
+	</files>
+	<config>
+	 <fields name="params">
+	  <fieldset name="basic">
+		<field name="format" type="list" default="h1" label="Format" description="Format">
+    	<option value="1">H1</option>
+    	<option value="2">H2</option>
+			<option value="3">H3</option>
+			<option value="4">H4</option>
+      <option value="5">H5</option>
+      <option value="6">H6</option>
+		</field>
+		</fieldset>
+        <fieldset name="advanced">
+			<field
+				name="moduleclass_sfx"
+				type="text"
+				label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL"
+				description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC" />
+		</fieldset>
+   </fields>	
+	</config>
+</extension>

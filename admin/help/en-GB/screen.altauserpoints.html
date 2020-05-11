@@ -1,0 +1,194 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en_US" xml:lang="en_US">
+<head>
+<title>Help</title>
+<link href="css/help.css" rel="stylesheet" type="text/css" />
+<meta name="copyright" content="Copyright (C) 2015 Bernard Gilly - Adrien Roussel. All rights reserved." />
+<meta name="license" content="http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL" />
+<style type="text/css">
+<!--
+.Style4 {
+	font-size: 14px;
+	font-weight: bold;
+}
+-->
+</style>
+</head>
+<body>
+<h1>AltaUserPoints - 1.0.x - Help </h1>
+
+<p><b>Presentation:</b> AltaUserPoints is  a Referral User Points System. It's is a component that can distribute or assign points to registered users according to some of its actions and activity on your website.  
+AltaUserPoints acts as an incentive promoting participation of users. Users often strive for more recognition, as well as competition. It's also usefull for contest, challenge, participation, game, online store. This component has its own component of invite/recommendation for refer which can also be used by non-registered users (based on AlphaRecommend).</p>
+<p>  <b>License:</b> AltaUserPoints is made under license <a href="http://www.gnu.org/licenses/gpl-2.0.html">GNU/GPL License</a>. <br />
+  <br />
+<b>Installation:</b> Installing the component via the administration interface Joomla. During installation, plugins systems and module administrator are installed and are automatically published. If, however Plugins directory does not have permission in writing, an error and warned the user. The component will be reinstalled after amendment rights in the directory Plugins. </p>
+
+<p><b>Migrate from AlphaUserPoints</b> Database tables are the same for both extensions. So you can easily migrate. To migrate your 3rd party extensions rules and plugins, only change alpha to alta (case sensitive) in your codes.</p>
+<p><b>General Control panel of Joomla:</b> </p>
+<p>During the installation of AltaUserPoints, an icon is added to the general control panel of joomla (mod_aupadmin). This icon allows you to quickly launch AltaUserPoints and display also a warning if there are pending approvals.<br />
+  <br />
+  <b>AltaUserPoints Control panel:</b> <br />
+  <br />
+  <i>Button / menu<strong> Rules</strong> </i><br />
+  This menu provides access to the list of rules to award points according to some actions of the registered user. The descriptions of the rules will give you information on their roles and conditions for awarding points. To install new rules inter-acting with third components, see <a href="#advanced">To go further</a>. <br />
+  <br />
+  <i>Button / menu <strong>Users</strong></i><br />
+This menu displays all registered members of the site with their respective IDs AlphaUserPoint, total points for each current members and a link to the details of every action having reported points.  </p>
+<p><i>Button / menu <strong>Activity</strong></i><br />
+This menu displays all activities of members of the site with possibility to export in CSV format. </p>
+<p><i><a name="templateinvite" id="templateinvite"></a>Button / menu <strong>Templates Invite </strong></i><br />
+This menu displays list of template for invitation by e-mail and allows create it. 3 vars available to put in the body of the e-mail: {name} to show the name of the sender and {custom} to show the custom text writen by the sender. Var {link} display the link created to invite in the body of the message. <br />
+  <br />
+  <i>Button / menu <strong>Sync. users</strong> </i><br />
+  This menu allows, after the first installation, synchronize Together members already registered on the site to their assigned an AlphaUSerPoints identifier (referral id). Before synchronize users, please read the <a href="#first">Getting Started section</a>. <br />
+  <br />
+  <i>Button / menu <strong>Recalculate </strong></i><br />
+  This menu allows you to launch a recalculation of the total number of points for each member after removal or modification of action points by an administrator. <br />
+  <br />
+  <i>Button / menu <strong>Reset all points</strong> </i><br />
+  This menu reset all the counters to zero points for all registered members. You can set this counter manualy for each member (menu Users Statistics)<br />
+  <br />
+  <i>Button / menu <strong>Set max points </strong></i><br />
+  This menu sets a maximum limit of points can be assigned to all registered members of the site. 0 or blank if you do not set limits. You can set max points manualy for each member (menu Users Statistics). <br />
+  <br />
+  <i>Button / menu <strong>Purge expires points</strong></i><br />
+This menu allows purging all user points with a deadline of validity. Important: This action results in an immediate recalculation (auto) of all points and for all users. </p>
+<p><i>Button / menu <strong>Categories</strong></i><br />
+This menu allows to create some categories for raffles, coupon codes and ranks/medals. </p>
+<p><i>Button / menu <strong>Coupon Codes </strong></i><br />
+This menu allows to create Coupon Codes for extra points for your users. Code generator and coupons generator.</p>
+<p><i>Button / menu <strong>Raffle</strong></i><br />
+This menu allows to create raffle, lottery or promotions for your users. 1 to 3 winners for each raffle.</p>
+<p><i>Button / menu <strong>Rank</strong></i><strong>s/Medals </strong><br />
+This menu allows to create ranks and medals for your users. Both can be combined.</p>
+<p><i>Button / menu  <strong>Statistics</strong></i><br />
+This menu display Top 10 winning points and Top 10 Points spent by users. Filter by date. <br />
+<br />
+  <i>Button / menu <strong>Export active users (CSV)</strong> </i><br />
+  This menu launches export in CSV file first fifty of the most active members (with the most points). <br />
+  <br />
+  <i>Button / Menu <strong>Export e-mails (CSV) </strong></i><br />
+This menu launches export in CSV file of all email addresses stored in the table details of the component following an action-type invitation/recommendation, recommend an article ... </p>
+<p><i>Button / Menu <strong>Combine Activities</strong></i><br />
+This menu allows to combine the set of all actions in one activity from a specified date (perform database if you have huge activity). </p>
+<p><i>Button / menu <strong>Report system </strong></i><br />
+Use this menu to helps moderators and community on the support forum better understand 
+your setup when you're troubleshooting. Paste the contents of this field
+in your post when requesting help on the support forum.			</p>
+<p><i>Button / menu <strong>Auto-detect new rules </strong> </i><br />
+This menu allows you to add new Plugins/Rules inter-acting with third components. After intsall a new extension for Joomla!, w<span class="" id="result_box" lang="en" xml:lang="en"><span class="hps">hen this extension</span> <span class="hps">has rules</span> <span class="hps">and interactions</span> <span class="hps">shares</span> <span class="hps">AltaUserPoints</span><span>,</span> <span class="hps">then just</span> <span class="hps">click the button</span> <span class="hps">and the new rules</span> <span class="hps">will be added</span> <span class="hps">automatically.</span></span> For more information on this menu, see <a href="#advanced">To go further</a>. <br />
+  <br />
+  <i>Button / menu <strong>About </strong></i><br />
+  Information on the component. <br />
+  <br />
+  <i>Button / menu <strong>How to create a plugin</strong> </i><br />
+This menu displays a help file explaining how to integrate the API AltaUserPoints in a third component  and how to generate an XML file installation of the new rule concerning this third component. </p>
+<p><i>Button / menu <strong>Rules list </strong></i><br /> 
+  Display list of official extend rules for AltaUserPoints.
+<br />
+<br />
+  <i>Button /  menu</i> <strong><em>Help </em></strong><br />
+  Displays this file. <br />
+  <b><br />
+  <strong><a name="first" id="first"></a></strong>Getting Started:</b> <br />
+  <br />
+  <b class="Style4">Setting pre-existing rules </b><br />
+  Via the administration interface Joomla! Click on the menu components then on the menu AltaUserPoints. Then click on the submenu rules or click the rules if you are already in the control panel of AltaUserPoints component . <br />
+  <br />
+  When you launch the device for the first time, an informational message appears in the control panel component. This message informs you that you must first synchronize users / members registered with  AltaUserPoints. However, if you want to award points to each registering a new user, and not to penalize the former members, you must set the rule for new members before making synchronization. Edit this rule and assign a number of points for each new member. Save this rule. You are now able to synchronize all members. These will be credited with points. As soon as a new member will, it will be credited with the number of points specified in the rule. <br />
+  Set and enabled other rules according to your needs. The descriptions of the rules will give you information on their roles and conditions for awarding points. <br />
+  <i>Note: The rule for new users can not be disabled. You can only save to zero the number of points awarded for this rule if you do not wish to assign point on this action.</i></p>
+<ol>
+  <li>  Rule <strong><i>New user</i></strong>: Assigned or not points for each new user registered on the site.</li>
+  <li> Rule <strong><i>Invite</i></strong>: Assigned or not  points when a user to ask someone else to register on the site (send email).</li>
+  <li>Rule <strong><i>Invite with success</i></strong>: Assigned or not points to the refferal user  when a user registers on the site following an invitation.</li>
+  <li>Rule <strong><i>Reader to author</i></strong>: Assigns points to the author when one of its articles were read by a user.</li>
+  <li>Rule <strong><i>Referral points</i></strong>: Referral users  earn bonus points as a percentage on all points earned by their referrees.</li>
+  <li>Rule <strong><i>Bonus points</i></strong>: Assigns bonus points to specific users (Backend -&gt; AltaUserPoints -&gt; menu Users statistics).</li>
+  <li>Rule<strong><i> Change user level (1) </i></strong>: Specifies a number of points sufficient to authorize a registered user to change level. * </li>
+  <li>Rule <strong><i>Change user level (2)</i></strong>: Specifies a number of points sufficient to authorize an author user to change level. * </li>
+  <li>Rule <strong><i>Change user level (3)</i></strong>: Specifies a number of points sufficient to authorize an editor user to change level. * </li>
+  <li>Rule <strong><i>Winner notification</i></strong>: Sending a message to the user and administrator, when it reached the maximum number of points required (requires setting max points).</li>
+  <li>Rule <strong><i>Coupon points codes</i></strong>: Allows users to enter a code in the module appropriate to get extra points. You must install the module <i>mod_altauserpoints_couponcode</i>.</li>
+  <li>Rule <strong><i>Raffle</i></strong>: This rule allows to enable a raffle system.</li>
+  <li>Rule <i><b>Custom</b></i>: Assigns or remove custom points to a specific user and set a reason (Backend -&gt; menu Users -&gt; Details -&gt; Toolbar -&gt; Button Custom points)</li>
+ 
+ 
+  <li>Rule <strong><em>Profile View</em></strong> : Assigns points to the owner of the profile when the current user looks at a profile				</li>
+  <li>Rule <b><i>Combined activities</i></b>: Allows administrator to combine  the set of all actions in one activity from a specified date (perform database if you have huge activity). This rule is necessary to show the combined activity on the activities of users.</li>
+</ol>
+<p><span id="result_box" class="short_text"><span style="background-color: 
+rgb(255, 255, 255);" title="Il y a aussi 2 r&egrave;gles">There are also 4 auto-detect rules</span></span> if Kunena forum is installed on the website. This 4 rules allows to assigns points on post a new topic, reply on topic, ThankYou and delete post. </p>
+<p><em>  * <strong>Important</strong>: To use change levels rules, users must have only one group. Not possible to works with few groups: e.g. registered and super-user. And each level must be in the same tree and follow a progressive ranking : e.g. a registered member can be use the &quot;Change level 1&quot; rule to become an author, &quot;Change level 2 &quot; rule to become an Editor, &quot;Change level 3 &quot; rule to become a publisher. Not possible to change on another tree. 
+
+
+ Iif the points back below the threshold current level
+
+, 
+
+
+ the user returns to the parent level of this current level.</em></p>
+<p><br />
+  <b class="Style4">Creating menus </b><br />
+AltaUserPoints includes 7 options for creating  menu on frontend.</p>
+<ul>
+  <li> A menu to display the profil/account of user connected with the total number of points, medals and statistics. This menu will be mainly used to match the user menu.</li>
+  <li> A menu to display the list of all members with total points and referre ID.</li>
+  <li>A menu to start the invitation / recommendation. This invite can also be used by guests (non-members, no points). This menu has several specific parameters for security (anti-flood) and the import of email addresses (integration with  OpenInviter). IMPORTANT: Using OpenInviter option require <a href="http://openinviter.com/" target="_blank">com_openinviter </a>installed first. </li>
+  <li> A menu to list medals awarded
+  <li>A menu to display a link to RSS feed of latest activity
+  <li>A menu to display the latest activity with pagination
+  <li>A menu to display the list of the available rules to earn or spent points 
+</ul>
+            To use ReCaptcha (anti-spam), you must first obtain keys for use on the site <a href="http://www.google.com/recaptcha" target="_blank">http://www.google.com/recaptcha</a>.<br />
+    <br />
+    To create a menu selected AltaUserPoints component in the interface for creating menus Joomla! then choose the type of menu to create. Enter a name for this menu, then set it if necessary. For more information on creating menu under Joomla! See you using Joomla!.</li>
+
+
+<p><b class="Style4">Allows guest user to see profile members</b><br />
+Use the menu Configuration and enabled or disabled to allows guest user to see profile members. </p>
+<p><b class="Style4">Change the prefix identifier</b><br />
+
+You can change the prefix identifier AltaUserPoints in Configuration menu. You can enter a particular prefix for users to register themselves on your site and another for users by referrer. 7 characters maximum.</p>
+<p><b class="Style4">Modify Referral ID type: </b><br />
+You can change the type of identifier AltaUserPoints in Configuration menu. Choose between randomize or Username as the referral Identifier.</p>
+<p><b class="Style4">Limit daily points: </b><br />
+If you want to limit user points earned by day, you can enter a number in Configuration menu, otherwise leave empty.</p>
+<p><b class="Style4">Integration: </b><br />
+If you want to use Uddeim message or JomSocial notification instead e-mailing AltaUserPoints notification, enabled in integration tab in configuration (button Options) and select an admin ID from the list. Thinks to enabled notification and set the message for each rule in the rules manager. </p>
+<p><b class="Style4">Raffle system:<br />
+</b><b>First step</b>: If you want offer a raffle to you users, you must enabled the rule &quot;Raffle&quot;. Then, add a raffle and settings it. You can choose to offer points,  coupon code to your registered users or an e-mail with a link to download something.<br />
+<b>Second step</b> (optional): If you have choose a registration for a raffle, you can put in a content article this following tag to activate the Joomla content plugin: <b>{AUP::RAFFLE=ID}</b> where ID is the ID of your raffle. This tag display a button to raffle registration to your registered users. If multiple entries is allowed, then a user can subscribe more than once to a raffle (as a system tickets/billets lottery).<br />
+To show a link to invite friends to register to a draw (if this raffle is with multiple registrations of course): type <b>{AUP::RAFFLEINVITE=ID}</b> where ID is the ID of your raffle. If this tag is in an article, it can be used by any registered user and the referral user get a free additional subscription (one free additional ticket/billet) when the new user made the first registration to the raffle. If this link is sent by a registered user to a friend not already registered on the website, then invite and invite with success rule works primary and the referral user earn one free additional ticket/billet after  first registration to the raffle too. <br />
+To show the list of tickets/billets subcription for the current user logged-in: type <b>{AUP::RAFFLETICKETS=ID}</b> where ID is the ID of your raffle. <br />
+  <em>NOTE: button show on frontend only to registered users if registration is Yes, and then registered users can join to raffle. If registration is No, then all users are automatically in raffle (only once).<br />
+  <strong>Samples</strong> :<br />
+  If registration enabled - users (not guests) must make registration in (subscribe to the) current raffle to participate in it.<br />
+  If multiple registration - users (not guests) can take more chances to win with additional registration (as additional billet in lottery)<br />
+If public - everyone who registered on your site (not guests) will participate automatically (with 1 billet).</em></p>
+<p>
+  Now, in backend, you have the number of enrolled users in this raffle. If you click on this number, You can show and export the entire list of participating in this raffle in csv format.</p>
+<p><b class="Style4">Level/Rank and Medals : </b><br />
+ Both can be used together or  individually. Ranks or medals  can be awarded automatically when a user reaches a certain number of points (enter a number of points in the rank/medal) or can be assigned manually to a user (Set to zero point).  
+ In all cases, the rank or medal can be modified manually by administrator directly in the detail user. 
+<span id="result_box" class="medium_text"><span style="background-color:
+ rgb(255, 255, 255);" title="Si vous assignez un rang qui est 
+normalement destin&eacute; &agrave; &ecirc;tre assign&eacute; automatiquement &agrave; un certain niveau 
+de points, ce dernier ne sera pas pris en compte.">If you assign a rank that is normally intended to be assigned automatically to a certain level of points, it will not be taken into account. <span id="result_box" class="short_text"><span style="background-color: 
+rgb(255, 255, 255);" title="Il est recommand&eacute; de ne pas m&eacute;langer les 
+deux types de rank (automatique ou manuel)">It is recommended not to mix the two types of rank (automatic or manual)</span></span>.</span></span></p>
+<p> When you assign a medal to a user, you can add a description or a reason for award. If you leave blank, the default description of the medal is assigned. The default ranks and medals created during installation of the component can
+  be removed without problem if you do not use them. If there is no rank/medal, the columns to display the icons or the number of medals will
+  not be displayed in users management.</p>
+<p><b class="Style4">Check version  : </b><br />
+You can show/hide the checking version in Configuration menu.<br />
+  <br />
+  <b><strong><a name="advanced" id="advanced"></a></strong>To go further:</b><br />
+  <br />
+  <span class="Style4">Installing third plugins</span> <br />
+  <em>Detect new rules </em>: To detect new rules or from inter-acting with  third components, click on the button of  control panel component named &quot;auto-detect new rules&quot; after each new install component or plugin. <br />
+  <br />
+If you want more information on how to create a plugin, go on using "<a target="_blank" href="https://www.nordmograph.com/extensions/index.php?option=com_content&view=category&id=74&Itemid=288">How to create a plugin</a>."</p>
+</body>
+</html>
