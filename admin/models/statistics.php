@@ -140,7 +140,7 @@ class altauserpointsModelStatistics extends JmodelLegacy {
 		$lists['search']    = $search;
 		
 		// get list level / rank
-		$query = "SELECT id, rank FROM #__alpha_userpoints_levelrank WHERE typerank='0'";
+		$query = "SELECT * FROM #__alpha_userpoints_levelrank WHERE typerank='0'";
 		$db->setQuery( $query );
 		$resultsrank = $db->loadObjectList();
 		
@@ -197,7 +197,7 @@ class altauserpointsModelStatistics extends JmodelLegacy {
 		$row->referralusername = $db->loadResult();
 		
 		// get list level / rank
-		$query = "SELECT id, rank FROM #__alpha_userpoints_levelrank WHERE typerank='0'";
+		$query = "SELECT * FROM #__alpha_userpoints_levelrank WHERE typerank='0'";
 		$db->setQuery( $query );
 		$results = $db->loadObjectList();
 		
@@ -208,7 +208,7 @@ class altauserpointsModelStatistics extends JmodelLegacy {
 		$listrank = JHTML::_('select.genericlist', $oplistRank, 'levelrank', 'class="inputbox" size="1"', 'value', 'text', $row->levelrank );
 		
 		// get list medals
-		$queryMedals = "SELECT id, rank FROM #__alpha_userpoints_levelrank WHERE typerank='1'";
+		$queryMedals = "SELECT * FROM #__alpha_userpoints_levelrank WHERE typerank='1'";
 		$db->setQuery( $queryMedals );
 		$results1 = $db->loadObjectList();
 		$oplistRank1[] = JHTML::_('select.option',  '0', '- '. JText::_( 'AUP_SELECT_MEDAL' ) .' -' );
