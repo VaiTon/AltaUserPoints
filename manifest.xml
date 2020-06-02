@@ -7,7 +7,7 @@
 	<authorUrl>https://www.nordmograph.com/extensions</authorUrl>
 	<copyright>2015-2019 Bernard Gilly - Adrien Roussel - All Rights Reserved</copyright>
 	<license>GNU/GPL</license>
-	<version>1.1.13</version>
+	<version>1.1.14</version>
 	<description><![CDATA[User Points System component for Joomla! 3.x - Released under GNU/GPL license. See LICENSE.txt.]]></description>
 	<files folder="site">
 		<filename>altauserpoints.php</filename>
