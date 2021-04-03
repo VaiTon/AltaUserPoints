@@ -1,4 +1,4 @@
 [submodule "joomla"]
 	path = lib/joomla
 	url = https://github.com/joomla/joomla-cms.git
-	branch = 4.0-dev	
+	branch = 4.0-dev
